@@ -7,7 +7,7 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     font-size: 1.2rem;
     line-height: 1.5;
@@ -20,7 +20,10 @@ body {
 
 /* -------------------------------------------- */
 /* Links */
-a {
+a,
+a:hover,
+a:active,
+a:visited {
     text-decoration: none;
     color: #fff;
 }
@@ -34,9 +37,12 @@ a {
     background-color: #13137e;
     height: 4rem;
     padding: 0 1.5rem;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .site-logo {
@@ -49,8 +55,10 @@ a {
     line-height: 0;
 }
 
-.nav-toggle {
-    background-color: #13137e;
+#nav-toggle {
+    background: none;
+    border: none;
+    height: 1.5rem;
 }
 
 #nav-toggle path {
@@ -59,24 +67,22 @@ a {
 
 #site-nav-list {
     background-color: #121a8bd4;
-    font-size: 1.5rem;
     line-height: 2.3;
     list-style: none;
     margin: 0;
     padding: 0;
-    position: fixed;
-    right: 0;
-    top: -100%;
-    /* transition: top .5s ease; */
-    /* z-index: 1; */
+    display: none;
 }
 
 #site-nav-list.toggled {
+    display: block;
+    position: fixed;
+    right: 0;
     top: 4rem;
 }
 
 #site-nav-list li {
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
 }
 
 #site-nav-list li:hover {
@@ -87,8 +93,21 @@ a {
 
 /* --------------------------------- */
 /* Main */
+.page-header {
+    position: relative;
+}
+
+.page-header h1 {
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .page-content {
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 /* --------------------------------- */
