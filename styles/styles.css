@@ -1,0 +1,107 @@
+/* -------------------------------------------- */
+/* Typography */
+html {
+    scroll-padding: 4rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+/* -------------------------------------------- */
+/* Elements */
+
+
+/* -------------------------------------------- */
+/* Links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* -------------------------------------------- */
+/* Components */
+/* --------------------------------- */
+/* Header */
+.site-header {
+    background-color: #13137e;
+    height: 4rem;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+.site-nav {
+    background-color: #13137e;
+    line-height: 0;
+}
+
+.nav-toggle {
+    background-color: #13137e;
+}
+
+#nav-toggle path {
+	fill: #ffffff;
+}
+
+#site-nav-list {
+    background-color: #121a8bd4;
+    font-size: 1.5rem;
+    line-height: 2.3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: -100%;
+    /* transition: top .5s ease; */
+    /* z-index: 1; */
+}
+
+#site-nav-list.toggled {
+    top: 4rem;
+}
+
+#site-nav-list li {
+    padding: 1rem 2rem;
+}
+
+#site-nav-list li:hover {
+    background-color: #1821a1;
+}
+
+
+
+/* --------------------------------- */
+/* Main */
+.page-content {
+    padding: 1rem;
+}
+
+/* --------------------------------- */
+/* Footer */
+.site-footer {
+    background-color: #eee;
+    color: #000;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* -------------------------------------------- */
