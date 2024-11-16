@@ -98,16 +98,27 @@ main {
     background-color: #1821a1;
 }
 
+@media(min-width: 43.75em) {
+    .site-header {
+        height: 5rem;
+    }
 
+    #site-nav-list.toggled {
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 5rem;
+    }
+
+    #site-nav-list li {
+        padding: 1rem 2.5rem;
+    }
+}
 
 /* --------------------------------- */
 /* Main */
 .page-header {
     position: relative;
-}
-
-.page-header img {
-    /* max-height: 10rem; */
 }
 
 .page-header h1 {
@@ -132,6 +143,16 @@ main {
     margin: 0 auto 3rem;
 }
 
+@media(min-width: 43.75em) {
+    .page-header img,
+    .page-header video {
+        display: block;
+        width: 100%;
+        height: 37rem;
+        object-fit: cover;
+    }
+}
+
 /* --------------------------------- */
 /* Footer */
 .site-footer {
@@ -143,6 +164,7 @@ main {
 
 .site-footer p {
     margin: 0;
+    text-align: center;
 }
 
 /* -------------------------------------------- */
@@ -222,6 +244,47 @@ article blockquote {
     }
 }
 
+.page-content .section-contact-form {
+    margin-bottom: 5rem;
+    width: clamp(20rem, 80%, 50rem);
+}
+
+fieldset {
+    background-color: #0d0d58;
+    border: #0d0d58 solid 2px;
+    border-radius: 10px;
+}
+
+fieldset * {
+    display: block;
+    line-height: 2;
+}
+
+fieldset label {
+    color: #fff;
+}
+
+fieldset input,
+fieldset textarea {
+    width: 100%;
+    border: #13137e solid 2px;
+    border-radius: 5px;
+}
+
+fieldset label {
+    margin-top: 1rem;
+}
+
+fieldset textarea {
+    height: 10rem;
+}
+
+fieldset .btn-submit {
+    margin: 1.5rem auto 1rem;
+    width: auto;
+}
+
+
 /* --------------------------------- */
 /* Culture */
 .culture-table {
@@ -237,10 +300,6 @@ td {
     border: #000 1px solid;
     border-collapse: collapse;
     padding: .5rem;
-}
-
-table {
-    
 }
 
 td {
