@@ -1,11 +1,12 @@
-/* General */
+/* Base */
 /* -------------------------------------------- */
-/* Typography */
 html {
     scroll-padding: 4rem;
     scroll-behavior: smooth;
 }
 
+/* -------------------------------------------- */
+/* Typography */
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -29,6 +30,12 @@ a:visited {
     color: #fff;
 }
 
+/* -------------------------------------------- */
+/* Layout */
+main {
+    /* max-width: 68.75rem; */
+    margin: 0 auto;
+}
 
 /* -------------------------------------------- */
 /* Components */
@@ -98,6 +105,10 @@ a:visited {
     position: relative;
 }
 
+.page-header img {
+    /* max-height: 10rem; */
+}
+
 .page-header h1 {
     color: #fff;
     margin: 0;
@@ -131,12 +142,13 @@ a:visited {
 
 /* --------------------------------- */
 /* Culture */
-.page-content {
-   max-width: 100%
+.page-content section {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .culture-table {
-    max-width: 100%;
     font-size: 1rem;
     overflow: scroll;
     margin-bottom: 2rem;
@@ -149,6 +161,10 @@ td {
     border: #000 1px solid;
     border-collapse: collapse;
     padding: .5rem;
+}
+
+table {
+    
 }
 
 td {
