@@ -15,10 +15,10 @@ body {
     line-height: 1.5;
 }
 
-
-/* -------------------------------------------- */
-/* Elements */
-
+h1 {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    text-transform: uppercase;
+}
 
 /* -------------------------------------------- */
 /* Links */
@@ -47,6 +47,7 @@ main {
     padding: 0 1.5rem;
     position: sticky;
     top: 0;
+    box-shadow: #333 1px 1px 5px 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,6 +121,15 @@ main {
 
 .page-content {
     padding: 0 1rem;
+    max-width: 68.75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-content section {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 3rem;
 }
 
 /* --------------------------------- */
@@ -138,16 +148,82 @@ main {
 /* -------------------------------------------- */
 /* Page specific */
 /* -------------------------------------------- */
+/* Home */
+section {
+    margin-bottom: 3rem;
+}
 
+.cards {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+article {
+    height: 100%;
+    position: relative;
+}
+
+article img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+
+article h3,
+article blockquote {
+    margin: 0;
+    position: absolute;
+}
+
+article blockquote p {
+    margin-bottom: .5rem;
+}
+
+article h3 {
+    font-size: clamp(1.2rem, 5vw, 5rem);
+    top: 1.5rem;
+    left: 2rem;
+}
+
+article blockquote {
+    width: clamp(8rem, 50vw, 20rem);
+    font-size: clamp(1rem, 5vw, 4rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-wildlife {
+    color: #000;
+}
+.card-credits {
+    background-color: #13137e;
+}
+
+.card:hover {
+    box-shadow: #aaa 2px 2px 2px 1px;
+}
+
+@media(min-width: 43.75em) {
+    .cards {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    article h3 {
+        font-size: clamp(1rem, 2.5vw, 2rem);
+        top: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    article blockquote {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        width: clamp(8rem, 20vw, 15rem);
+    }
+}
 
 /* --------------------------------- */
 /* Culture */
-.page-content section {
-    width: fit-content;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
 .culture-table {
     font-size: 1rem;
     overflow: scroll;
