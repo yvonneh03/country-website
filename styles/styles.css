@@ -129,6 +129,35 @@ a:visited {
 /* -------------------------------------------- */
 
 
+/* --------------------------------- */
+/* Culture */
+.page-content {
+   max-width: 100%
+}
+
+.culture-table {
+    max-width: 100%;
+    font-size: 1rem;
+    overflow: scroll;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+table,
+th,
+td {
+    border: #000 1px solid;
+    border-collapse: collapse;
+    padding: .5rem;
+}
+
+td {
+    vertical-align: top;
+}
+
+td ul {
+    padding-left: 1.5rem;
+}
 
 /* --------------------------------- */
 /* Wildlife */
