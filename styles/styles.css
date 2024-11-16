@@ -255,4 +255,16 @@ td ul {
 /* Wildlife */
 
 
+/* --------------------------------- */
+/* Credits */
+.credits-page a,
+.credits-page a:visited {
+    text-decoration: underline;
+    color: #1821a1;
+}
+
+.credits-page a:hover {
+    color: #13137e;
+}
+
 /* -------------------------------------------- */
